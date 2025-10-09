@@ -1,0 +1,17 @@
+# command used for one node of the aws ec2 cluster
+# note the inclusion of the public loadbalancer dns name
+# along with all loadbalancer private ip's/hostnames
+
+cockroach cert create-node \
+  ip-10-0-0-37.ec2.internal \
+  10.0.0.37 \
+  localhost \
+  ip-10-0-0-7.ec2.internal \
+  10.0.0.7 \
+  ip-10-0-0-30.ec2.internal \
+  10.0.0.30 \
+  ip-10-0-0-39.ec2.internal \
+  10.0.0.39 \
+  dlupinski-loadbalancer-demo-f14b410b42004da2.elb.us-east-1.amazonaws.com \
+  --certs-dir=certs \
+  --ca-key=certs/ca.key

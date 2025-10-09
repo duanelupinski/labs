@@ -1,1 +1,6 @@
 workload/a.txt
+aws_deploy/access/dlupinski-demo1.pem
+aws_deploy/access/dlupinski-demo2.pem
+aws_deploy/access/dlupinski-demo3.pem
+aws_deploy/access/my-safe-directory.bak/ca.key
+aws_deploy/access/certs/ca.key
